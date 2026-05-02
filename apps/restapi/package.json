@@ -2,9 +2,16 @@
   "name": "@ocmo/restapi",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc && tsc-alias",
+    "start": "ts node -r tsconfig-paths/register src/index.ts",
+    "dev": "ts-node-dev --respawn --transpile-only -r tsconfig-paths/register src/index.ts",
+    "test": "jest",
+    "clean": "rm -rf dist",
+    "lint": "eslint src -ext .ts",
+    "check-types": "tsc --noEmit"
   },
   "keywords": [],
   "author": "",
