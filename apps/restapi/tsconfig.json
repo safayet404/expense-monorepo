@@ -1,5 +1,5 @@
 {
-    "extends": "@ocmo/typescript-config/nextjs.json",
+    "extends": "@ocmo/typescript-config/base.json",
     "compilerOptions": {
         "ignoreDeprecations": "6.0",
         "outDir": "/.dist",
