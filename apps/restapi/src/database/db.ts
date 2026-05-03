@@ -47,4 +47,4 @@ const defaultData: DB = {
 }
 const adapter = new JSONFile<DB>('db.json')
 
-const db = new LowWithLodash(adapter, defaultData)
+export const db = new LowWithLodash(adapter, defaultData)
