@@ -17,13 +17,18 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^25.6.0",
-    "@ocmo/typescript-config": "workspace:*",
     "@ocmo/eslint-config": "workspace:*",
+    "@ocmo/typescript-config": "workspace:*",
+    "@types/lodash": "^4.17.24",
+    "@types/node": "^25.6.0",
     "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0",
     "tsc-alias": "^1.8.17",
     "tsconfig-paths": "^4.2.0",
     "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "loadash": "^1.0.0",
+    "lowdb": "^7.0.1"
   }
 }
